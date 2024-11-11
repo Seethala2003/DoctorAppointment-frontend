@@ -147,9 +147,9 @@ const UserAppointments = () => {
                 <tr key={appointment._id}>
                   {isDoctor ? (
                     <>
-                      <td>{appointment.userInfo.fullName}</td>
+                      <td>{appointment.userId.fullName}</td>
                       <td>{appointment.date}</td>
-                      <td>{appointment.userInfo.phone}</td>
+                      <td>{appointment.userId.phone}</td>
                       <td>
                         <Button variant="link" onClick={() => handleDownload(appointment.document.path, appointment._id)}>
                           {/* {appointment.document.filename} */}

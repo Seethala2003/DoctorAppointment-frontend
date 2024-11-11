@@ -35,6 +35,7 @@ const Login = () => {
         localStorage.setItem('token', res.data.token);
         localStorage.setItem('userData', JSON.stringify(res.data.user));
         const a = localStorage.getItem('userData');
+        alert(a);
         message.success('Login successfully');
         const isLoggedIn = JSON.parse(localStorage.getItem("userData"));
         const { type } = isLoggedIn;
